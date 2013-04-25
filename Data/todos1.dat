@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Length: 115
+Content-Type: application/json
+
+[{
+	"text": "this my simple todo",
+	"completed": false
+},
+{
+	"text": "completed todo",
+	"completed": true
+}]

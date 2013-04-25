@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoResponder LastSave="2013-04-16T16:43:56.5819202-05:00" FiddlerVersion="4.4.3.0">
+  <State Enabled="true" Fallthrough="true" UseLatency="true">
+    <ResponseRule Match="regex:(?insx).+jquery\.js$ #Capture jquery" Action="http://localhost/js/libs/jquery.js" Enabled="true" />
+    <ResponseRule Match="regex:(?insx).+app\.js$ #Capture jquery" Action="http://localhost/js/app.js" Enabled="false" />
+  </State>
+</AutoResponder>
