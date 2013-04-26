@@ -1,6 +1,11 @@
 //define or export our module
 define(['modules/spinner/spinnerModule'], function (spinnerModule) {
 
+    //log jquery version
+    if(console != 'undefined') {
+        console.log("jQuery Version: " + $.fn.jquery);
+    }
+    
     //here is our module definition...
     var spinner = new spinnerModule();
     //a function that will append the todo items to the root element (el)
@@ -38,13 +43,14 @@ define(['modules/spinner/spinnerModule'], function (spinnerModule) {
 
         //just to simulate the spinner
         window.setTimeout(function(){
-            var ul = el.add("ul");
+            var ul = $("<ul class=\"unstyled\"/>");
 
             for (var i = 0; i < todos.length; i++) {
-                var completedText = todos[i].completed ? " (done)" : "";
-                ul.append("<li>" + todos[i].text + completedText + "</li>");
+                var checked = todos[i].completed ? "&nbsp;&nbsp;<i class=\"icon-ok\"></i>" : "";
+                ul.append("<li>" + todos[i].text + checked + "</li>");
             }
-            el.add(ul);
+
+            ul.appendTo(el);
             spinner.stop(); 
         }, 1000);
     };

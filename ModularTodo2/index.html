@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -8,14 +9,15 @@
 	<div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.html">Modular Todo 1</a>
+          <a class="brand" href="index.html">Modular Todo 2</a>
         </div>
       </div>
     </div>
 	<div class="container" id="spinner" style="display: none"><img src="img/ajax-loader.gif" /></div>
   <div class="container" id="content"></div>
-	<div class="container" id="commands">
-    <input id="newTodo" type="text" /><input id="addTodo" type="button" value="Add" />
+  <div class="container input-append" id="content">
+    <input id="newTodo" type="text" class="input-large">
+    <button id="addTodo" type="button" class="btn btn-primary">Add</button>
   </div>
 </body>
 </html>

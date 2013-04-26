@@ -7,7 +7,7 @@ require(['modules/todo/todoModule'], function (todo) {
 });
 
 //here's what happens...app.js has a dep on todo, which has a dep on spinner so the browser will download 
-//the scripts in the following order asynchronously:
+//the scripts asynchronously:
 // app.js
 // todoModule.js
 // spinner.js

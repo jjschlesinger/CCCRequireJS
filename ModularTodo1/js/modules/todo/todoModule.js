@@ -1,6 +1,8 @@
 //define or export our module
 define(['modules/spinner/spinnerModule'], function (spinnerModule) {
     //here is our module definition...
+    
+    //imported module dependency
     var spinner = new spinnerModule();
 
     //a function that will append the todo items to the root element (el)
@@ -57,6 +59,6 @@ define(['modules/spinner/spinnerModule'], function (spinnerModule) {
 
     //here we return our module
     return {
-    	load: load
+    	load: load //load function declared above
     };
 });
