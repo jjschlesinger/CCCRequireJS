@@ -1,0 +1,4 @@
+require-2.1.4
+jquery-1.9.1
+knockout-2.2.1
+amplify-1.1.0
