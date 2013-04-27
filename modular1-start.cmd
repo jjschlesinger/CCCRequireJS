@@ -1,1 +1,2 @@
-iisexpress /path:D:\Development\GitHub\CCCRequireJS\ModularTodo1 /port:8080 
+"C:\Program Files\IIS Express\iisexpress.exe" /path:%~dp0\ModularTodo1 /port:8080 
+pause
